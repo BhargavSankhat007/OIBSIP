@@ -8,8 +8,7 @@ This application helps users organize their daily tasks efficiently by allowing 
 
 ## 🚀 Live Demo
 
-🔗 Live Website: Add your GitHub Pages URL here.
-
+🔗 Live Website: https://bhargavsankhat007.github.io/OIBSIP/todo/
 ---
 
 ## 📸 Project Preview
