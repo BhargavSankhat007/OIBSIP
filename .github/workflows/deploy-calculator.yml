@@ -5,7 +5,7 @@ on:
     branches: ["main"]
     paths:
       - "WebDev-L2-Calculator/**"
-      - "WebDev-L2-ToDo-App/**"
+      - "WebDev-L2-ToDoApp/**"
       - ".github/workflows/deploy-calculator.yml"
 
   workflow_dispatch:
