@@ -1,10 +1,11 @@
-name: Deploy Calculator to GitHub Pages
+name: Deploy OIBSIP Projects
 
 on:
   push:
     branches: ["main"]
     paths:
       - "WebDev-L2-Calculator/**"
+      - "WebDev-L2-ToDo-App/**"
       - ".github/workflows/deploy-calculator.yml"
 
   workflow_dispatch:
@@ -33,10 +34,16 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload calculator files
+      - name: Prepare website
+        run: |
+          mkdir -p public/todo
+          cp -r WebDev-L2-Calculator/. public/
+          cp -r WebDev-L2-ToDo-App/. public/todo/
+
+      - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./WebDev-L2-Calculator
+          path: ./public
 
       - name: Deploy to GitHub Pages
         id: deployment
