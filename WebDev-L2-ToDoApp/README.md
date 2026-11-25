@@ -14,7 +14,7 @@ This application helps users organize their daily tasks efficiently by allowing 
 
 ## 📸 Project Preview
 
-Add a screenshot of your project here.
+![To-Do App Preview](Screenshot.png)
 
 ---
 
