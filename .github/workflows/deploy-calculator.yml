@@ -38,7 +38,7 @@ jobs:
         run: |
           mkdir -p public/todo
           cp -r WebDev-L2-Calculator/. public/
-          cp -r WebDev-L2-ToDo-App/. public/todo/
+          cp -r WebDev-L2-ToDoApp/. public/todo/
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
